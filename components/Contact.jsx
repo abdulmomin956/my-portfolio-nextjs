@@ -1,5 +1,6 @@
 import { faEnvelope, faMapMarkerAlt, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Image from 'next/image'
 import React from 'react'
 
 const Contact = () => {
@@ -80,7 +81,14 @@ const Contact = () => {
                         opacity: 1,
                         animationName: 'react-reveal-552593156641902-3'
                     }}>
-                        <img src="Mail-sent.svg" className="w-full h-auto" />
+                        <Image
+                            className="w-full h-auto"
+                            src="/Mail-sent.svg"
+                            width={0}
+                            height={0}
+                            sizes='100vw'
+                            style={{ width: '100%', height: 'auto' }}
+                            alt='mail sent svg' />
                     </div>
                 </div>
             </div>

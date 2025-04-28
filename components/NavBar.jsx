@@ -92,14 +92,20 @@ export default function NavBar() {
                                 </div>
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                                <button
-                                    type="button"
-                                    className="bg-[#72B626] p-1 px-4 text-white rounded hover:bg-black focus:outline-none focus:ring-2 focus:ring-[#72B626]"
+                                <a
+                                    href="https://drive.google.com/u/0/uc?id=1ggFW7OTCV_pOO-boMmq9pV9KofAhaGy0&export=download"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
-                                    <span className="sr-only">Download Resume</span>
-                                    <FontAwesomeIcon icon={faFileDownload} className='mr-1' />
-                                    Resume
-                                </button>
+                                    <button
+                                        type="button"
+                                        className="bg-[#72B626] p-1 px-4 text-white rounded hover:bg-black focus:outline-none focus:ring-2 focus:ring-[#72B626]"
+                                    >
+                                        <span className="sr-only">Download Resume</span>
+                                        <FontAwesomeIcon icon={faFileDownload} className='mr-1' />
+                                        Resume
+                                    </button>
+                                </a>
 
                             </div>
                         </div>

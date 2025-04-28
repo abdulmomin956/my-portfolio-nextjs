@@ -1,6 +1,7 @@
 import { faFacebook, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faGenderless } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Image from 'next/image'
 import React from 'react'
 
 const About = () => {
@@ -9,7 +10,14 @@ const About = () => {
             <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
                 <div className='flex flex-wrap mt-2'>
                     <div className="flex items-center w-full md:w-5/12">
-                        <img src="me.png" className="w-full h-auto" />
+                        <Image
+                            className="w-full h-auto"
+                            src="/me.png"
+                            width={0}
+                            height={0}
+                            sizes='100vw'
+                            style={{ width: '100%', height: 'auto' }}
+                            alt='Abdul Momin' />
                     </div>
                     <div className='flex flex-col md:flex-row md:items-center w-full md:w-7/12'>
                         <div>

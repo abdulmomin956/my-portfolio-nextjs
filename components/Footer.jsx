@@ -4,7 +4,7 @@ import SocialLinks from './SocialLinks'
 const Footer = () => {
     return (
         <footer className='footer'>
-            <div class="text-center container">
+            <div className="text-center container">
                 <SocialLinks />
                 <p>
                     Designed and Developed by {" "}

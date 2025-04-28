@@ -2,6 +2,7 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
 const Projects = () => {
@@ -13,10 +14,19 @@ const Projects = () => {
     return (
         <section className='projects'>
             <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-                <h1 className='text-4xl font-bold text-center title'>Some of <span>My Projects</span></h1>
+                <h1 className='text-4xl font-bold text-center title mb-12'>Some of <span>My Projects</span></h1>
                 <div className='flex flex-wrap flex-row'>
                     <div className='card bg-gray-300'>
-                        <div className="p-2 pj-img"><img className="card-img-top" src="vleaf.png" /></div>
+                        <div className="p-2 pj-img">
+                            <Image
+                                className="card-img-top"
+                                src="/vleaf.png"
+                                width={0}
+                                height={0}
+                                sizes="100vw"
+                                style={{ width: '100%', height: 'auto' }}
+                                alt='V-Leaf Equipment' />
+                        </div>
                         <div className="card-body">
                             <div className="card-title text-2xl">V-Leaf Equipment</div>
                             <p className="card-text">A full-stack single-page warehouse management web app where people can store a new product and manage equipment. Login system with firebase and private routes. An admin can do CRUD operations with any product.</p>
@@ -45,7 +55,16 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className='card bg-gray-300'>
-                        <div className="p-2 pj-img"><img className="card-img-top" src="couplecapture.png" /></div>
+                        <div className="p-2 pj-img">
+                            <Image
+                                className="card-img-top"
+                                src="/couplecapture.png"
+                                width={0}
+                                height={0}
+                                sizes='100vw'
+                                style={{ width: '100%', height: 'auto' }}
+                                alt='Couple Capture' />
+                        </div>
                         <div className="card-body">
                             <div className="card-title text-2xl">Couple Capture</div>
                             <p className="card-text">A full-stack single-page independent service provider web app where people can book an independent cameraman to capture their happy moment. Login system with firebase and private routes.</p>
@@ -74,7 +93,16 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className='card bg-gray-300'>
-                        <div className="p-2 pj-img"><img className="card-img-top" src="autohunt.png" /></div>
+                        <div className="p-2 pj-img">
+                            <Image
+                                className="card-img-top"
+                                src="/autohunt.png"
+                                width={0}
+                                height={0}
+                                sizes='100vw'
+                                style={{ width: '100%', height: 'auto' }}
+                                alt='Auto Hunt' />
+                        </div>
                         <div className="card-body">
                             <div className="card-title text-2xl">Auto Hunt</div>
                             <p className="card-text">A full-stack single-page marketplace web app. Users can sell thier used  or new conditioned car in the website. AppWrite is used here as Database and image bucket. Any registered users can CRUD operations.</p>

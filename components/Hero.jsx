@@ -40,7 +40,7 @@ function Hero() {
                         </p>
 
                         <a
-                            href="https://drive.google.com/u/0/uc?id=194Bn_iu-ngZgnbHeTz7yHZy9BvmCLh3A&export=download"
+                            href="https://drive.google.com/u/0/uc?id=1ggFW7OTCV_pOO-boMmq9pV9KofAhaGy0&export=download"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
