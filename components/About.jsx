@@ -19,7 +19,7 @@ const About = () => {
                             style={{ width: '100%', height: 'auto' }}
                             alt='Abdul Momin' />
                     </div>
-                    <div className='flex flex-col md:flex-row md:items-center w-full md:w-7/12'>
+                    <div className='flex flex-col md:flex-row md:items-center w-full md:w-7/12 py-5'>
                         <div>
                             <h1 className='text-4xl font-bold '>About Me</h1>
                             <p className="md:pr-8 mb-4">

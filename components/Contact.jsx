@@ -86,6 +86,7 @@ const Contact = () => {
                             src="/Mail-sent.svg"
                             width={0}
                             height={0}
+                            priority={true}
                             sizes='100vw'
                             style={{ width: '100%', height: 'auto' }}
                             alt='mail sent svg' />

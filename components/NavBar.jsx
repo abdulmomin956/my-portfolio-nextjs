@@ -4,12 +4,8 @@ import {
     Disclosure,
     DisclosureButton,
     DisclosurePanel,
-    Menu,
-    MenuButton,
-    MenuItem,
-    MenuItems,
 } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '@/public/logo.png'
@@ -103,7 +99,7 @@ export default function NavBar() {
                                     >
                                         <span className="sr-only">Download Resume</span>
                                         <FontAwesomeIcon icon={faFileDownload} className='mr-1' />
-                                        Resume
+                                        <span className='hidden sm:inline'>Resume</span>
                                     </button>
                                 </a>
 
